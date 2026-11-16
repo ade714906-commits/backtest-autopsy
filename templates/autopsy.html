@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 範本：複製到 autopsies/YYYY-MM-DD-slug.html 後，把所有 {{...}} 換掉。規則見 CLAUDE.md 第 3 節 -->
+<title>{{策略名稱}}｜回測驗屍室</title>
+<meta name="description" content="{{一句話結論，同 data/autopsies.js 的 headline}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="../index.html">回測<span>驗屍</span>室</a>
+  <nav class="nav"><a href="../index.html">全部報告</a><a href="../method.html">方法與名詞</a></nav>
+</div></header>
+
+<main class="wrap">
+<p class="crumb"><a href="../index.html">全部報告</a> / {{策略名稱}}</p>
+<article>
+  <h1>{{策略名稱}}</h1>
+  <div class="meta">
+    <span>判決日 {{YYYY-MM-DD}}</span>
+    <span>{{市場}}</span>
+    <span class="badge {{dead|alive|watch}}">{{死亡|存活|觀察中}}</span>
+    <span class="tag">{{標籤1}}</span><span class="tag">{{標籤2}}</span>
+  </div>
+
+  <section id="hypothesis">
+    <h2><span class="no">01</span>假說</h2>
+    <p>{{一句話：在什麼情況做什麼，預期會怎樣}}</p>
+  </section>
+
+  <section id="why">
+    <h2><span class="no">02</span>為什麼可能有效</h2>
+    <p>{{機制：誰被迫交易？誰付錢給你？}}</p>
+  </section>
+
+  <section id="rules">
+    <h2><span class="no">03</span>怎麼測的</h2>
+    <ul>
+      <li>資料：{{來源}}</li>
+      <li>樣本：探索期 {{期間}}／考試期 {{期間或「封存未開」}}</li>
+      <li>進場：{{規則}}</li>
+      <li>出場：{{規則}}</li>
+      <li>成本：{{假設}}</li>
+    </ul>
+  </section>
+
+  <section id="result">
+    <h2><span class="no">04</span>結果</h2>
+    <div class="table-scroll"><table>
+      <tr><th>樣本</th><th>淨報酬</th><th>t 值</th><th>備註</th></tr>
+      <tr><td>探索期</td><td class="num">{{+0.00%/筆}}</td><td class="num">{{0.00}}</td><td>{{—}}</td></tr>
+      <tr><td>考試期</td><td class="num">{{+0.00%/筆 或 封存未開}}</td><td class="num">{{0.00 或 —}}</td><td>{{—}}</td></tr>
+    </table></div>
+  </section>
+
+  <section id="cause">
+    <h2><span class="no">05</span>{{死因|存活理由}}</h2>
+    <p>{{講機制，不要只重複數字}}</p>
+  </section>
+
+  <section id="lesson">
+    <h2><span class="no">06</span>一句話教訓</h2>
+    <blockquote class="lesson">{{30 字以內}}</blockquote>
+  </section>
+</article>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  本站內容為個人回測研究紀錄，僅供學習「如何檢驗策略」，不構成任何投資建議。過去的回測結果不代表未來表現。
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>鉅額交易溢價大買後做多｜回測驗屍室</title>
+<meta name="description" content="有人溢價大買不代表知道什麼：探索期淨 −0.83%（t −0.99）">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="../index.html">回測<span>驗屍</span>室</a>
+  <nav class="nav"><a href="../index.html">全部報告</a><a href="../method.html">方法與名詞</a></nav>
+</div></header>
+
+<main class="wrap">
+<p class="crumb"><a href="../index.html">全部報告</a> / 鉅額交易溢價大買後做多</p>
+<article>
+  <h1>鉅額交易溢價大買後做多</h1>
+  <div class="meta">
+    <span>判決日 2026-11-03</span>
+    <span>台股</span>
+    <span class="badge dead">死亡</span>
+    <span class="tag">事件</span><span class="tag">籌碼</span>
+  </div>
+
+  <section id="hypothesis">
+    <h2><span class="no">01</span>假說</h2>
+    <p>當有人用高於市價的價格，透過鉅額交易一次買走一大塊股票，隔天跟著買進，預期股價會往買方願意付的價格靠攏。</p>
+  </section>
+
+  <section id="why">
+    <h2><span class="no">02</span>為什麼可能有效</h2>
+    <p>願意多付錢買一大塊，看起來像是「知道些什麼」的人在吃貨。如果買方真的有資訊，市場價格應該慢慢跟上他付的溢價。</p>
+  </section>
+
+  <section id="rules">
+    <h2><span class="no">03</span>怎麼測的</h2>
+    <ul>
+      <li>資料：證交所鉅額交易公告＋日行情</li>
+      <li>樣本：探索期／考試期依預登記切分</li>
+      <li>進場：鉅額成交價高於前一日收盤一定幅度，隔日開盤買進</li>
+      <li>出場：固定持有天數後賣出</li>
+      <li>成本：手續費＋證交稅＋買賣價差，全部扣除</li>
+    </ul>
+  </section>
+
+  <section id="result">
+    <h2><span class="no">04</span>結果</h2>
+    <div class="table-scroll"><table>
+      <tr><th>樣本</th><th>淨報酬</th><th>t 值</th><th>備註</th></tr>
+      <tr><td>探索期</td><td class="num neg">−0.83%/筆</td><td class="num neg">−0.99</td><td>方向反了，也不顯著</td></tr>
+      <tr><td>考試期</td><td class="num">封存未開</td><td class="num">—</td><td>探索期沒過，不開</td></tr>
+    </table></div>
+  </section>
+
+  <section id="cause">
+    <h2><span class="no">05</span>死因</h2>
+    <p>溢價大買很多其實是「早就談好」的交易：大股東轉手、法人換手、集團內部調整。價格是雙方協議的，不是買方看好未來。</p>
+    <p>另外一個差點騙到我的陷阱：除權息當天的日行情漲跌欄會顯示 0，如果直接拿它算參考價，會把除息的價差誤算成「溢價」。正確做法是用前一日收盤價，再用除權息資料調整。</p>
+  </section>
+
+  <section id="lesson">
+    <h2><span class="no">06</span>一句話教訓</h2>
+    <blockquote class="lesson">看到有人花大錢，先問他是不是本來就非買不可。</blockquote>
+  </section>
+</article>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  本站內容為個人回測研究紀錄，僅供學習「如何檢驗策略」，不構成任何投資建議。過去的回測結果不代表未來表現。
+</div></footer>
+</body>
+</html>

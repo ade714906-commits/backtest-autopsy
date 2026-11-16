@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>回測驗屍室</title>
+<meta name="description" content="交易策略驗屍報告：每一篇記錄一個被認真測過的想法，為什麼看起來會賺、實際測出來怎樣、死因是什麼。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="index.html">回測<span>驗屍</span>室</a>
+  <nav class="nav"><a href="index.html">全部報告</a><a href="method.html">方法與名詞</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <h1>大部分策略都死了。<br>這裡記錄它們是怎麼死的。</h1>
+    <p>每一篇都是一個被認真測過的交易想法：為什麼看起來會賺、扣掉成本後實際怎樣、死因是什麼。死掉的策略，比活下來的更值得讀。</p>
+  </section>
+
+  <div class="stats">
+    <div class="stat"><b id="n-total">–</b><small>篇報告</small></div>
+    <div class="stat"><b id="n-dead" class="neg">–</b><small>判決死亡</small></div>
+    <div class="stat"><b id="n-alive" class="pos">–</b><small>判決存活</small></div>
+  </div>
+
+  <div class="filters" id="filters"></div>
+  <div class="cards" id="cards"><noscript>請開啟 JavaScript 以顯示報告列表。</noscript></div>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  本站內容為個人回測研究紀錄，僅供學習「如何檢驗策略」，不構成任何投資建議。過去的回測結果不代表未來表現。
+</div></footer>
+<script src="data/autopsies.js"></script>
+<script src="assets/site.js"></script>
+</body>
+</html>

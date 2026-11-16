@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>台指選擇權賣方鐵蝶｜回測驗屍室</title>
+<meta name="description" content="連用中價成交都沒有保險費可收：每筆 −1.9bp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="../index.html">回測<span>驗屍</span>室</a>
+  <nav class="nav"><a href="../index.html">全部報告</a><a href="../method.html">方法與名詞</a></nav>
+</div></header>
+
+<main class="wrap">
+<p class="crumb"><a href="../index.html">全部報告</a> / 台指選擇權賣方鐵蝶</p>
+<article>
+  <h1>台指選擇權賣方鐵蝶</h1>
+  <div class="meta">
+    <span>判決日 2026-10-18</span>
+    <span>台指選擇權</span>
+    <span class="badge dead">死亡</span>
+    <span class="tag">選擇權</span>
+  </div>
+
+  <section id="hypothesis">
+    <h2><span class="no">01</span>假說</h2>
+    <p>每期賣出價平的買權與賣權，再買更外面的保護，組成鐵蝶。預期長期能收到選擇權賣方的「保險費」。</p>
+  </section>
+
+  <section id="why">
+    <h2><span class="no">02</span>為什麼可能有效</h2>
+    <p>美股研究常見的結論：市場預期的波動通常比實際波動大，所以賣選擇權長期有正報酬（VRP）。如果台指選擇權也有，鐵蝶是風險有上限的收法。</p>
+  </section>
+
+  <section id="rules">
+    <h2><span class="no">03</span>怎麼測的</h2>
+    <ul>
+      <li>資料：期交所台指選擇權逐筆買賣價＋官方結算價</li>
+      <li>樣本：預登記探索期 2019–2022</li>
+      <li>進場：每期固定時點建立鐵蝶</li>
+      <li>出場：持有到結算</li>
+      <li>成本：先用「中價成交」這個最樂觀的假設，如果這樣都不賺，就不用再扣成本</li>
+    </ul>
+  </section>
+
+  <section id="result">
+    <h2><span class="no">04</span>結果</h2>
+    <div class="table-scroll"><table>
+      <tr><th>樣本</th><th>淨報酬</th><th>t 值</th><th>備註</th></tr>
+      <tr><td>探索期（中價）</td><td class="num neg">−1.9bp/筆</td><td class="num">—</td><td>最樂觀假設下已為負，不需再算</td></tr>
+      <tr><td>考試期</td><td class="num">封存未開</td><td class="num">—</td><td>探索期沒過，不開</td></tr>
+    </table></div>
+  </section>
+
+  <section id="cause">
+    <h2><span class="no">05</span>死因</h2>
+    <p>在這段期間，台指選擇權的隱含波動並沒有比實際波動貴，賣方根本沒有保險費可收。連買賣都用中間價（實際上做不到）都是負的，真實成交只會更差。</p>
+    <p>別的市場的研究結論，不能直接搬過來用。</p>
+  </section>
+
+  <section id="lesson">
+    <h2><span class="no">06</span>一句話教訓</h2>
+    <blockquote class="lesson">先用最樂觀的假設測，連這樣都不賺就不用再試了。</blockquote>
+  </section>
+</article>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  本站內容為個人回測研究紀錄，僅供學習「如何檢驗策略」，不構成任何投資建議。過去的回測結果不代表未來表現。
+</div></footer>
+</body>
+</html>

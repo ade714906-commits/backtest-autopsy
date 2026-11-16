@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>方法與名詞｜回測驗屍室</title>
+<meta name="description" content="回測驗屍室怎麼判一個策略的生死：預登記、探索期與考試期、淨報酬、t 值。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="index.html">回測<span>驗屍</span>室</a>
+  <nav class="nav"><a href="index.html">全部報告</a><a href="method.html">方法與名詞</a></nav>
+</div></header>
+
+<main class="wrap">
+<p class="crumb"><a href="index.html">全部報告</a> / 方法與名詞</p>
+<article>
+  <h1>方法與名詞</h1>
+  <div class="meta"><span>每篇驗屍報告都用同一套規則判決。看不懂報告裡的詞，來這裡查。</span></div>
+
+  <section id="process">
+    <h2><span class="no">01</span>判決流程</h2>
+    <ol>
+      <li><b>先寫下規則再看資料</b>（預登記）：進場、出場、成本、及格線，全部寫死。</li>
+      <li><b>只在探索期試</b>：把歷史資料切兩段，前段拿來試，後段鎖起來。</li>
+      <li><b>探索期過了才開考試期</b>：只開一次，結果就是判決。不准開了再改規則重考。</li>
+      <li><b>判決只有三種</b>：<span class="badge dead">死亡</span> <span class="badge alive">存活</span> <span class="badge watch">觀察中</span></li>
+    </ol>
+  </section>
+
+  <section id="glossary">
+    <h2><span class="no">02</span>名詞表</h2>
+    <dl class="glossary">
+      <dt>預登記</dt>
+      <dd>在看結果之前，先把「怎麼測、怎樣算過」寫下來並存檔。目的是防止自己看到結果後偷偷改規則。</dd>
+      <dt>探索期／考試期</dt>
+      <dd>探索期是練習題，可以調整想法；考試期是期末考，封存到最後只打開一次。探索期就不及格的，考試期不開（報告寫「封存未開」）。</dd>
+      <dt>淨報酬</dt>
+      <dd>扣掉手續費、證交稅、買賣價差之後剩下的報酬。本站所有報酬都是淨的。很多策略毛報酬是正的，扣完就變負。</dd>
+      <dt>t 值</dt>
+      <dd>衡量「這個平均報酬是不是運氣」的數字。大約 |t| &gt; 2 才開始算有訊號；試過的點子越多，門檻要越高，因為試一百次總會有一次剛好好看。t 為負代表方向反了。</dd>
+      <dt>超額報酬</dt>
+      <dd>扣掉同期大盤漲跌之後的報酬。大盤一起漲的部分不算策略的功勞。</dd>
+      <dt>試驗額度</dt>
+      <dd>每多測一個點子，就多一次「被運氣騙」的機會。所以本站會記錄總共試了幾個，額度用完就停，不靠無限嘗試挖出一個好看的。</dd>
+      <dt>Lift（提升倍數）</dt>
+      <dd>預測模型挑出的組別，事件發生率是隨機挑的幾倍。Lift 高只代表「比較常猜中」，不代表「賺得比較多」。</dd>
+      <dt>VRP（波動率風險溢酬）</dt>
+      <dd>選擇權賣方理論上收的「保險費」：市場預期的波動通常比實際波動大，賣方長期賺這個差。</dd>
+    </dl>
+  </section>
+
+  <section id="why-dead">
+    <h2><span class="no">03</span>為什麼大部分都死</h2>
+    <p>常見死因只有幾種：效應是真的但小於交易成本；效應在探索期出現、考試期消失（原本就是雜訊）；或方向根本反了。能活下來的，多半有一個清楚的「誰被迫交易」的理由，而不只是 K 線長得像。</p>
+  </section>
+</article>
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  本站內容為個人回測研究紀錄，僅供學習「如何檢驗策略」，不構成任何投資建議。過去的回測結果不代表未來表現。
+</div></footer>
+</body>
+</html>
